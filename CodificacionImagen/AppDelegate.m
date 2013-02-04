@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ImageViewController.h"
 
 @implementation AppDelegate
 
@@ -20,7 +21,10 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    ImageViewController * imageViewController = [[[ImageViewController alloc] initWithNibName: @"ImageViewController" bundle: nil] autorelease];
+    [self.window setRootViewController: imageViewController];
     [self.window makeKeyAndVisible];
     return YES;
 }

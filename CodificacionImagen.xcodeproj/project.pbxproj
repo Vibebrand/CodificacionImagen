@@ -21,6 +21,13 @@
 		F195572916C0591000492E93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F195570A16C0591000492E93 /* Foundation.framework */; };
 		F195573116C0591000492E93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F195572F16C0591000492E93 /* InfoPlist.strings */; };
 		F195573416C0591000492E93 /* CodificacionImagenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F195573316C0591000492E93 /* CodificacionImagenTests.m */; };
+		F195574116C0595A00492E93 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F195573F16C0595A00492E93 /* ImageViewController.m */; };
+		F195574216C0595A00492E93 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F195574016C0595A00492E93 /* ImageViewController.xib */; };
+		F195574416C05F1600492E93 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F195574316C05F1600492E93 /* Icon.png */; };
+		F195574616C05F1A00492E93 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F195574516C05F1900492E93 /* Icon@2x.png */; };
+		F195574816C05F2E00492E93 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F195574716C05F2E00492E93 /* Default.png */; };
+		F195574A16C05F2F00492E93 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F195574916C05F2F00492E93 /* Default@2x.png */; };
+		F195574C16C05F3400492E93 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F195574B16C05F3400492E93 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,14 @@
 		F195573016C0591000492E93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F195573216C0591000492E93 /* CodificacionImagenTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodificacionImagenTests.h; sourceTree = "<group>"; };
 		F195573316C0591000492E93 /* CodificacionImagenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodificacionImagenTests.m; sourceTree = "<group>"; };
+		F195573E16C0595A00492E93 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		F195573F16C0595A00492E93 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		F195574016C0595A00492E93 /* ImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
+		F195574316C05F1600492E93 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		F195574516C05F1900492E93 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		F195574716C05F2E00492E93 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F195574916C05F2F00492E93 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F195574B16C05F3400492E93 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +97,11 @@
 		F19556F916C0591000492E93 = {
 			isa = PBXGroup;
 			children = (
+				F195574B16C05F3400492E93 /* Default-568h@2x.png */,
+				F195574916C05F2F00492E93 /* Default@2x.png */,
+				F195574716C05F2E00492E93 /* Default.png */,
+				F195574516C05F1900492E93 /* Icon@2x.png */,
+				F195574316C05F1600492E93 /* Icon.png */,
 				F195570E16C0591000492E93 /* CodificacionImagen */,
 				F195572C16C0591000492E93 /* CodificacionImagenTests */,
 				F195570716C0591000492E93 /* Frameworks */,
@@ -112,6 +132,7 @@
 		F195570E16C0591000492E93 /* CodificacionImagen */ = {
 			isa = PBXGroup;
 			children = (
+				F195573D16C0593500492E93 /* ViewControllers */,
 				F195571716C0591000492E93 /* AppDelegate.h */,
 				F195571816C0591000492E93 /* AppDelegate.m */,
 				F195570F16C0591000492E93 /* Supporting Files */,
@@ -150,6 +171,16 @@
 				F195572F16C0591000492E93 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F195573D16C0593500492E93 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F195573E16C0595A00492E93 /* ImageViewController.h */,
+				F195573F16C0595A00492E93 /* ImageViewController.m */,
+				F195574016C0595A00492E93 /* ImageViewController.xib */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +258,12 @@
 				F195571B16C0591000492E93 /* Default.png in Resources */,
 				F195571D16C0591000492E93 /* Default@2x.png in Resources */,
 				F195571F16C0591000492E93 /* Default-568h@2x.png in Resources */,
+				F195574216C0595A00492E93 /* ImageViewController.xib in Resources */,
+				F195574416C05F1600492E93 /* Icon.png in Resources */,
+				F195574616C05F1A00492E93 /* Icon@2x.png in Resources */,
+				F195574816C05F2E00492E93 /* Default.png in Resources */,
+				F195574A16C05F2F00492E93 /* Default@2x.png in Resources */,
+				F195574C16C05F3400492E93 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +300,7 @@
 			files = (
 				F195571516C0591000492E93 /* main.m in Sources */,
 				F195571916C0591000492E93 /* AppDelegate.m in Sources */,
+				F195574116C0595A00492E93 /* ImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,10 +393,12 @@
 		F195573816C0591000492E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CodificacionImagen/CodificacionImagen-Prefix.pch";
 				INFOPLIST_FILE = "CodificacionImagen/CodificacionImagen-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -366,10 +406,14 @@
 		F195573916C0591000492E93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CodificacionImagen/CodificacionImagen-Prefix.pch";
 				INFOPLIST_FILE = "CodificacionImagen/CodificacionImagen-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
