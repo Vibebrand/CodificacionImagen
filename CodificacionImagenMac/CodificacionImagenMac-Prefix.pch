@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CodificacionImagenMac' target in the 'CodificacionImagenMac' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		F1053ABD16E590D900311611 /* Serializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F1053ABC16E590D900311611 /* Serializer.m */; };
 		F1053ABE16E590D900311611 /* Serializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F1053ABC16E590D900311611 /* Serializer.m */; };
+		F1053AC516E5924600311611 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F195570A16C0591000492E93 /* Foundation.framework */; };
+		F1053AC816E5924600311611 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1053AC716E5924600311611 /* main.m */; };
+		F1053ACC16E5924600311611 /* CodificacionImagenMac.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F1053ACB16E5924600311611 /* CodificacionImagenMac.1 */; };
+		F1053AD016E5925C00311611 /* Serializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F1053ABC16E590D900311611 /* Serializer.m */; };
+		F1053AD116E5925C00311611 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F195575C16C0720000492E93 /* GTMBase64.m */; };
 		F195570916C0591000492E93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F195570816C0591000492E93 /* UIKit.framework */; };
 		F195570B16C0591000492E93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F195570A16C0591000492E93 /* Foundation.framework */; };
 		F195570D16C0591000492E93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F195570C16C0591000492E93 /* CoreGraphics.framework */; };
@@ -43,10 +48,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F1053AC216E5924500311611 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				F1053ACC16E5924600311611 /* CodificacionImagenMac.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F1053ABB16E590D900311611 /* Serializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Serializer.h; sourceTree = "<group>"; };
 		F1053ABC16E590D900311611 /* Serializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Serializer.m; sourceTree = "<group>"; };
 		F1053ABF16E5911600311611 /* ISerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISerializer.h; sourceTree = "<group>"; };
+		F1053AC416E5924500311611 /* CodificacionImagenMac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodificacionImagenMac; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1053AC716E5924600311611 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1053ACA16E5924600311611 /* CodificacionImagenMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodificacionImagenMac-Prefix.pch"; sourceTree = "<group>"; };
+		F1053ACB16E5924600311611 /* CodificacionImagenMac.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CodificacionImagenMac.1; sourceTree = "<group>"; };
 		F195570416C0591000492E93 /* CodificacionImagen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodificacionImagen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F195570816C0591000492E93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F195570A16C0591000492E93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,6 +102,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F1053AC116E5924500311611 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1053AC516E5924600311611 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F195570116C0591000492E93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -113,6 +143,24 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		F1053AC616E5924600311611 /* CodificacionImagenMac */ = {
+			isa = PBXGroup;
+			children = (
+				F1053AC716E5924600311611 /* main.m */,
+				F1053ACB16E5924600311611 /* CodificacionImagenMac.1 */,
+				F1053AC916E5924600311611 /* Supporting Files */,
+			);
+			path = CodificacionImagenMac;
+			sourceTree = "<group>";
+		};
+		F1053AC916E5924600311611 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1053ACA16E5924600311611 /* CodificacionImagenMac-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F19556F916C0591000492E93 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +171,7 @@
 				F195574316C05F1600492E93 /* Icon.png */,
 				F195570E16C0591000492E93 /* CodificacionImagen */,
 				F195572C16C0591000492E93 /* CodificacionImagenTests */,
+				F1053AC616E5924600311611 /* CodificacionImagenMac */,
 				F195570716C0591000492E93 /* Frameworks */,
 				F195570516C0591000492E93 /* Products */,
 			);
@@ -133,6 +182,7 @@
 			children = (
 				F195570416C0591000492E93 /* CodificacionImagen.app */,
 				F195572516C0591000492E93 /* CodificacionImagenTests.octest */,
+				F1053AC416E5924500311611 /* CodificacionImagenMac */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,6 +267,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F1053AC316E5924500311611 /* CodificacionImagenMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1053ACD16E5924600311611 /* Build configuration list for PBXNativeTarget "CodificacionImagenMac" */;
+			buildPhases = (
+				F1053AC016E5924500311611 /* Sources */,
+				F1053AC116E5924500311611 /* Frameworks */,
+				F1053AC216E5924500311611 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodificacionImagenMac;
+			productName = CodificacionImagenMac;
+			productReference = F1053AC416E5924500311611 /* CodificacionImagenMac */;
+			productType = "com.apple.product-type.tool";
+		};
 		F195570316C0591000492E93 /* CodificacionImagen */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F195573716C0591000492E93 /* Build configuration list for PBXNativeTarget "CodificacionImagen" */;
@@ -276,6 +343,7 @@
 			targets = (
 				F195570316C0591000492E93 /* CodificacionImagen */,
 				F195572416C0591000492E93 /* CodificacionImagenTests */,
+				F1053AC316E5924500311611 /* CodificacionImagenMac */,
 			);
 		};
 /* End PBXProject section */
@@ -325,6 +393,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F1053AC016E5924500311611 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1053AD016E5925C00311611 /* Serializer.m in Sources */,
+				F1053AD116E5925C00311611 /* GTMBase64.m in Sources */,
+				F1053AC816E5924600311611 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F195570016C0591000492E93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,6 +454,41 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F1053ACE16E5924600311611 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodificacionImagenMac/CodificacionImagenMac-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F1053ACF16E5924600311611 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodificacionImagenMac/CodificacionImagenMac-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		F195573516C0591000492E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -489,6 +602,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F1053ACD16E5924600311611 /* Build configuration list for PBXNativeTarget "CodificacionImagenMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1053ACE16E5924600311611 /* Debug */,
+				F1053ACF16E5924600311611 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F19556FE16C0591000492E93 /* Build configuration list for PBXProject "CodificacionImagen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
