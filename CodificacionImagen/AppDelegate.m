@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ImageViewController.h"
+#import "Serializer.h"
 
 @implementation AppDelegate
 
@@ -23,7 +24,10 @@
     // Override point for customization after application launch.
     
     
+    Serializer * serializer = [[Serializer new] autorelease];
     ImageViewController * imageViewController = [[[ImageViewController alloc] initWithNibName: @"ImageViewController" bundle: nil] autorelease];
+    [imageViewController setSerializer: serializer];
+    
     [self.window setRootViewController: imageViewController];
     [self.window makeKeyAndVisible];
     return YES;

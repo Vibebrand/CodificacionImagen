@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1053ABD16E590D900311611 /* Serializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F1053ABC16E590D900311611 /* Serializer.m */; };
+		F1053ABE16E590D900311611 /* Serializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F1053ABC16E590D900311611 /* Serializer.m */; };
 		F195570916C0591000492E93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F195570816C0591000492E93 /* UIKit.framework */; };
 		F195570B16C0591000492E93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F195570A16C0591000492E93 /* Foundation.framework */; };
 		F195570D16C0591000492E93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F195570C16C0591000492E93 /* CoreGraphics.framework */; };
@@ -42,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F1053ABB16E590D900311611 /* Serializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Serializer.h; sourceTree = "<group>"; };
+		F1053ABC16E590D900311611 /* Serializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Serializer.m; sourceTree = "<group>"; };
+		F1053ABF16E5911600311611 /* ISerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISerializer.h; sourceTree = "<group>"; };
 		F195570416C0591000492E93 /* CodificacionImagen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodificacionImagen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F195570816C0591000492E93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F195570A16C0591000492E93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,6 +103,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1053ABA16E5908F00311611 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F1053ABF16E5911600311611 /* ISerializer.h */,
+				F1053ABB16E590D900311611 /* Serializer.h */,
+				F1053ABC16E590D900311611 /* Serializer.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		F19556F916C0591000492E93 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +152,7 @@
 		F195570E16C0591000492E93 /* CodificacionImagen */ = {
 			isa = PBXGroup;
 			children = (
+				F1053ABA16E5908F00311611 /* Services */,
 				F195573D16C0593500492E93 /* ViewControllers */,
 				F195571716C0591000492E93 /* AppDelegate.h */,
 				F195571816C0591000492E93 /* AppDelegate.m */,
@@ -317,6 +333,7 @@
 				F195571916C0591000492E93 /* AppDelegate.m in Sources */,
 				F195574116C0595A00492E93 /* ImageViewController.m in Sources */,
 				F195575E16C0720000492E93 /* GTMBase64.m in Sources */,
+				F1053ABD16E590D900311611 /* Serializer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F195573416C0591000492E93 /* CodificacionImagenTests.m in Sources */,
+				F1053ABE16E590D900311611 /* Serializer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

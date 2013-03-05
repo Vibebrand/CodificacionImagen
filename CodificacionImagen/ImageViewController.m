@@ -7,7 +7,7 @@
 //
 
 #import "ImageViewController.h"
-#import "GTMBase64.h"
+
 
 @interface ImageViewController ()
 
@@ -45,8 +45,8 @@
     NSURL *url = [NSURL URLWithString: urlImageText];
     NSData *data = [NSData dataWithContentsOfURL:url];
     
-    NSString * sdata = [self serialize: data];
-    NSData * dataRes = [self deserialize: sdata];
+    NSString * sdata = [self.serializer serialize: data];
+    NSData * dataRes = [self.serializer deserialize: sdata];
     
     
     UIImage *img = [[[UIImage alloc] initWithData:dataRes scale: 1.0] autorelease];
@@ -64,19 +64,7 @@
     
     return YES;
 }
--(NSString *) serialize:(NSData*)data {
-    
-    return [GTMBase64 stringByEncodingData:data];
-}
 
-/**
- * Deserialize Base64 NSString to NSData
- */
--(NSData*) deserialize: (NSString *) input {
-    
-    return [GTMBase64 decodeString: input];
-    
-}
 
 - (void)dealloc {
     [_urlImage release];
@@ -84,4 +72,5 @@
     [_textArea release];
     [super dealloc];
 }
+
 @end
